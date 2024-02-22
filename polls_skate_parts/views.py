@@ -1,18 +1,11 @@
-from django.views.generic import ListView, DetailView
+from rest_framework import generics
 from .models import SkateParts
+from .serializer import SkatePartsSerializer
 
 
-class SkatePartsListView(ListView):
+class SkatePartsListView(generics.ListAPIView):
     """
-    ListView: To display a list of objects.
+    To display details of multiple objects.
     """
-    model = SkateParts
-    context_object_name = 'my_parts'
-
-
-class SkatePartsDetailView(DetailView):
-    """
-    DetailView: To display details of a single object.
-    """
-    model = SkateParts
-    context_object_name = 'my_part'
+    queryset = SkateParts.objects.all()
+    serializer_class = SkatePartsSerializer

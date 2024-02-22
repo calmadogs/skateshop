@@ -2,7 +2,7 @@ from django.db import models
 
 
 class SkateParts(models.Model):
-    id = models.BigIntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     shape_size = models.FloatField()
     truck_size = models.IntegerField()
     wheels_size = models.IntegerField()
