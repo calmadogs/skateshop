@@ -1,7 +1,7 @@
 from django.urls import path
 
-from . import views
+from .views import shape_view
 
 urlpatterns = [
-    path("skate-parts/", views.SkatePartsListView.as_view(), name="skate-parts-list"),
+    path("shape-list/", shape_view.ShapeList.as_view(), name="shape-list"),
 ]

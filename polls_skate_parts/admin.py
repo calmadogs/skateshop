@@ -1,5 +1,5 @@
 from django.contrib import admin
 
-from .models import SkateParts
+from .models.shape_model import Shape
 
-admin.site.register(SkateParts)
+admin.site.register(Shape)
