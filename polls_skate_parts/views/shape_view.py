@@ -1,9 +1,28 @@
 from rest_framework import generics
 
+from ..serializer.shape_serializer import ShapeSerializer
 from ..models.shape_model import Shape
-from ..serializer.shape_serializer.detailed_shape_serializer import DetailedShapeSerializer
 
 
 class ShapeList(generics.ListAPIView):
     queryset = Shape.objects.all()
-    serializer_class = DetailedShapeSerializer
+    serializer_class = ShapeSerializer
+
+
+class ShapeRetrieve(generics.RetrieveAPIView):
+    queryset = Shape.objects.all()
+    serializer_class = ShapeSerializer
+
+
+class ShapeCreate(generics.CreateAPIView):
+    queryset = Shape.objects.all()
+    serializer_class = ShapeSerializer
+
+
+class ShapeUpdate(generics.UpdateAPIView):
+    queryset = Shape.objects.all()
+    serializer_class = ShapeSerializer
+
+
+class ShapeDestroy(generics.DestroyAPIView):
+    queryset = Shape.objects.all()
