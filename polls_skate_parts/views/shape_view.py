@@ -1,6 +1,6 @@
 from rest_framework import generics
 
-from ..serializer.shape_serializer import ShapeSerializer
+from ..serializers.shape_serializer import ShapeSerializer
 from ..models.shape_model import Shape
 
 

@@ -1,7 +1,7 @@
 from rest_framework import generics
 
 from ..models.wheels_model import Wheels
-from ..serializer.wheels_serializer import WheelsSerializer
+from ..serializers.wheels_serializer import WheelsSerializer
 
 
 class WheelsList(generics.ListAPIView):

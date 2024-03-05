@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "rest_framework",
+    "polls_user.apps.PollsUserConfig",
     "polls_skate_parts.apps.PollsSkatePartsConfig",
     "django.contrib.admin",
     "django.contrib.auth",

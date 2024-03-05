@@ -1,7 +1,7 @@
 from rest_framework import generics
 
 from ..models.truck_model import Truck
-from ..serializer.truck_serializer import TruckSerializer
+from ..serializers.truck_serializer import TruckSerializer
 
 
 class TruckList(generics.ListAPIView):

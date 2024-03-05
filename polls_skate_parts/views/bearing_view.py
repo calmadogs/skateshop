@@ -1,7 +1,7 @@
 from rest_framework import generics
 
 from ..models.bearing_model import Bearing
-from ..serializer.bearing_serializer import BearingSerializer
+from ..serializers.bearing_serializer import BearingSerializer
 
 
 class BearingList(generics.ListAPIView):
